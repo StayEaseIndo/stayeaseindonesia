@@ -23,4 +23,169 @@
       z-index: 10;
     }
     header h1 {
-      font-s
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #ffd700;
+    }
+    nav a {
+      margin-left: 2rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(rgba(10,31,60,0.7), rgba(10,31,60,0.7)),
+                  url("https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba") no-repeat center/cover;
+      color: white;
+      padding: 2rem;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeInDown 2s ease;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 650px;
+      margin-bottom: 2rem;
+      animation: fadeInUp 2s ease;
+    }
+    .btn {
+      background: #ffd700;
+      color: #0a1f3c;
+      padding: 0.9rem 1.8rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+    .btn:hover { background: #e6c200; transform: translateY(-3px); }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Services */
+    section {
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    section h3 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      color: #0a1f3c;
+    }
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      width: 280px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: 0.4s;
+      text-align: left;
+      border-top: 4px solid #ffd700;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+    .card i {
+      font-size: 2rem;
+      color: #0a1f3c;
+      margin-bottom: 1rem;
+    }
+    .card h4 { margin-bottom: 0.8rem; color: #0a1f3c; }
+
+    /* Contact */
+    #contact p { font-size: 1.1rem; margin: 0.3rem 0; }
+
+    /* Footer */
+    footer {
+      background: #0a1f3c;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    footer p { margin: 0.5rem 0; }
+    footer a { color: #ffd700; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>StayEase Indonesia</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>Your Trusted Visa & Legal Partner</h2>
+    <p>Seamless visa processing, legal clarity, and consulting solutions for your business and personal journey in Indonesia.</p>
+    <a href="#services" class="btn">Discover Our Services</a>
+  </div>
+
+  <!-- Services -->
+  <section id="services">
+    <h3>Our Premium Services</h3>
+    <div class="services">
+      <div class="card">
+        <i class="fas fa-passport"></i>
+        <h4>Visa Solutions</h4>
+        <p>From tourist to business and retirement visas, we simplify the process with trusted expertise.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-gavel"></i>
+        <h4>Legal Consulting</h4>
+        <p>We provide expert legal guidance on company setup, compliance, and regulatory matters in Indonesia.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-briefcase"></i>
+        <h4>Business Advisory</h4>
+        <p>Get tailored strategies for smooth market entry and sustainable growth for your business in Indonesia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h3>Get in Touch</h3>
+    <p><i class="fas fa-envelope"></i> info@stayeaseindo.com</p>
+    <p><i class="fas fa-phone"></i> +62 812 3456 7890</p>
+    <p><i class="fas fa-map-marker-alt"></i> Jakarta & Bali, Indonesia</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 StayEase Indonesia. All rights reserved.</p>
+    <p>Website crafted with 💛 for professionals in Indonesia.</p>
+  </footer>
+</body>
+</html>
