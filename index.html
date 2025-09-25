@@ -1,191 +1,106 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StayEase Indonesia | Visa & Legal Consulting</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    /* Reset */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f4f4f9; color: #333; }
-
-    /* Navbar */
-    header {
-      background: #0a1f3c;
-      color: #f9f9f9;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    header h1 {
-      font-size: 1.6rem;
-      font-weight: bold;
-      color: #ffd700;
-    }
-    nav a {
-      margin-left: 2rem;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: #ffd700; }
-
-    /* Hero */
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: linear-gradient(rgba(10,31,60,0.7), rgba(10,31,60,0.7)),
-                  url("https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba") no-repeat center/cover;
-      color: white;
-      padding: 2rem;
-    }
-    .hero h2 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      animation: fadeInDown 2s ease;
-    }
-    .hero p {
-      font-size: 1.3rem;
-      max-width: 650px;
-      margin-bottom: 2rem;
-      animation: fadeInUp 2s ease;
-    }
-    .btn {
-      background: #ffd700;
-      color: #0a1f3c;
-      padding: 0.9rem 1.8rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      transition: 0.3s;
-    }
-    .btn:hover { background: #e6c200; transform: translateY(-3px); }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Services */
-    section {
-      padding: 5rem 2rem;
-      text-align: center;
-    }
-    section h3 {
-      font-size: 2.2rem;
-      margin-bottom: 2rem;
-      color: #0a1f3c;
-    }
-    .services {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .card {
-      background: #fff;
-      border-radius: 15px;
-      padding: 2rem;
-      width: 280px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      transition: 0.4s;
-      text-align: left;
-      border-top: 4px solid #ffd700;
-    }
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-    }
-    .card i {
-      font-size: 2rem;
-      color: #0a1f3c;
-      margin-bottom: 1rem;
-    }
-    .card h4 { margin-bottom: 0.8rem; color: #0a1f3c; }
-
-    /* Contact */
-    #contact p { font-size: 1.1rem; margin: 0.3rem 0; }
-
-    /* Footer */
-    footer {
-      background: #0a1f3c;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-    }
-    footer p { margin: 0.5rem 0; }
-    footer a { color: #ffd700; text-decoration: none; }
-  </style>
+  <title>StayEase Indonesia - Visa & Legal Consulting</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Header -->
   <header>
-    <h1>StayEase Indonesia</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1 class="site-title">StayEase Indonesia</h1>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <div class="hero">
-    <h2>Your Trusted Visa & Legal Partner</h2>
-    <p>Seamless visa processing, legal clarity, and consulting solutions for your business and personal journey in Indonesia.</p>
-    <a href="#services" class="btn">Discover Our Services</a>
-  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Visa & Legal Consulting Made Simple</h2>
+      <p>Your trusted partner for visas, permits, and legal solutions in Indonesia.</p>
+      <a href="#contact" class="btn-primary">Get Started</a>
+    </div>
+  </section>
 
   <!-- Services -->
-  <section id="services">
-    <h3>Our Premium Services</h3>
-    <div class="services">
-      <div class="card">
-        <i class="fas fa-passport"></i>
-        <h4>Visa Solutions</h4>
-        <p>From tourist to business and retirement visas, we simplify the process with trusted expertise.</p>
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Visa Assistance</h3>
+          <p>Professional support for tourist visas, business visas, KITAS, and KITAP.</p>
+        </div>
+        <div class="card">
+          <h3>Legal Consulting</h3>
+          <p>Comprehensive legal advice for businesses and individuals in Indonesia.</p>
+        </div>
+        <div class="card">
+          <h3>Company Setup</h3>
+          <p>From PT PMA to local companies, we help you establish legally and smoothly.</p>
+        </div>
       </div>
-      <div class="card">
-        <i class="fas fa-gavel"></i>
-        <h4>Legal Consulting</h4>
-        <p>We provide expert legal guidance on company setup, compliance, and regulatory matters in Indonesia.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-briefcase"></i>
-        <h4>Business Advisory</h4>
-        <p>Get tailored strategies for smooth market entry and sustainable growth for your business in Indonesia.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p>
+        StayEase Indonesia provides professional visa, legal, and corporate consulting
+        services with years of experience. We combine expertise with personalized
+        solutions to make your stay and business setup seamless.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="grid-2">
+        <div class="testimonial">
+          <p>“StayEase made my visa process so smooth and stress-free. Highly recommend!”</p>
+          <span>- Sarah K.</span>
+        </div>
+        <div class="testimonial">
+          <p>“Professional and reliable consulting service. They handled everything for my company setup.”</p>
+          <span>- David L.</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
-    <h3>Get in Touch</h3>
-    <p><i class="fas fa-envelope"></i> info@stayeaseindo.com</p>
-    <p><i class="fas fa-phone"></i> +62 812 3456 7890</p>
-    <p><i class="fas fa-map-marker-alt"></i> Jakarta & Bali, Indonesia</p>
+  <section id="contact" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 StayEase Indonesia. All rights reserved.</p>
-    <p>Website crafted with 💛 for professionals in Indonesia.</p>
+    <div class="container">
+      <p>&copy; 2025 StayEase Indonesia. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
